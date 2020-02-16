@@ -5,6 +5,7 @@
 				<div class="nav-home">
 					<router-link to="/" class="font-weight-bold d-inline-block mr-sm-10 mb-4 mb-sm-0">Duygu Keskek</router-link>
 				</div>
+				<router-link to="/" class="mr-5">Home</router-link>
 				<router-link to="/about" class="mr-5">About</router-link>
 				<router-link to="/thoughts" class="mr-5">Thoughts</router-link>
 				<router-link to="/resume" class="mr-5">Resume</router-link>
