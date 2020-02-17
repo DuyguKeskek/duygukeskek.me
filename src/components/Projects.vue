@@ -6,11 +6,9 @@
             <a class="no-underline" v-bind:href="project.url" target="_blank">{{ project.title }}</a>
         </h2>
         <p>{{ project.description }}</p>
-        <small class="project-link d-block pb-1" v-for="projectLink in project.projectLinks" v-bind:key="projectLink.id">
-            <span>
-                <img class="pr-1" v-bind:src="projectLink.favicon"/>
-            </span>
-            <a v-bind:href="projectLink.link" target="_blank">{{ projectLink.link }}</a>
+        <small class="project-link d-flex flex-row justify-start mb-2" v-for="projectLink in project.projectLinks" v-bind:key="projectLink.id">
+            <img v-bind:src="projectLink.favicon"/>
+            <a class="ml-2" v-bind:href="projectLink.link" target="_blank">{{ projectLink.label }}</a>
         </small>
     </div>
 </div>
@@ -29,12 +27,14 @@ export default {
                     description: "Sphinx based, open source static website for SunPy solar data analysis environment for Python.",
                     projectLinks: [
                         {
-                            favicon: require("./../assets/sunpy-icon.png"),
-                            link: "sunpy.org"
+                            favicon: require("./../assets/sunpy_icon.svg"),
+                            link: "sunpy.org",
+                            label: "sunpy.org"
                         },
                         {
-                            favicon: require("./../assets/sunpy-icon.png"),
-                            link: "sunpy.org"
+                            favicon: require("./../assets/github_icon.svg"),
+                            link: "sunpy.org",
+                            label: "GitHub"
                         }
                     ]
                 },
@@ -43,7 +43,19 @@ export default {
                     projectImg: require("./../assets/radius.png"),
                     url: "https://radiusanesthesia.com/",
                     title: "Radius Anesthesia",
-                    description: "Redesign and development of Radius Anesthesia WordPress company website."
+                    description: "Redesign and development of Radius Anesthesia WordPress company website.",
+                    projectLinks: [
+                        {
+                            favicon: require("./../assets/radius_icon.svg"),
+                            link: "http://radiusanesthesia.com/",
+                            label: "radiusanesthesia.com"
+                        },
+                        {
+                            favicon: require("./../assets/github_icon.svg"),
+                            link: "sunpy.org",
+                            label: "GitHub"
+                        }
+                    ]
                 }
             ]
         }
