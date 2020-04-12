@@ -120,7 +120,7 @@ h2 {
     font-size: 1.24em;
 }
 
-.content .no-underline {
+#content .no-underline {
     background-image: none;
 }
 
