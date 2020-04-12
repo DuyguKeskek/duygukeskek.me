@@ -54,7 +54,7 @@ h1 {
 }
 
 #content {
-	a {
+	a.hover-black {
 		color: #000;
 		font-weight: 600;
 		background-image: linear-gradient(to right,#000,#000);

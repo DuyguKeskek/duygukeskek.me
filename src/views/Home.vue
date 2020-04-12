@@ -6,7 +6,7 @@
 				<p>I like making open source projects for the web: my favorite ones are web applications, and stuff that could make someone's life easier.</p>
 				<p>
 					All of the projects are
-					<a href="https://github.com/DuyguKeskek">public on GitHub</a> where you can follow along.
+					<a href="https://github.com/DuyguKeskek" class="hover-black">public on GitHub</a> where you can follow along.
 				</p>
 			</div>
 			<Projects></Projects>
