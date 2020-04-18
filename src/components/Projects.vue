@@ -30,12 +30,12 @@ export default {
                     projectLinks: [
                         {
                             favicon: require("./../assets/sunpy_icon.svg"),
-                            link: "sunpy.org",
+                            link: "https://sunpy.org/",
                             label: "sunpy.org"
                         },
                         {
                             favicon: require("./../assets/github_icon.svg"),
-                            link: "sunpy.org",
+                            link: "https://github.com/sunpy/sunpy-sphinx-theme",
                             label: "GitHub"
                         }
                     ]
@@ -51,11 +51,6 @@ export default {
                             favicon: require("./../assets/radius_icon.svg"),
                             link: "http://radiusanesthesia.com/",
                             label: "radiusanesthesia.com"
-                        },
-                        {
-                            favicon: require("./../assets/github_icon.svg"),
-                            link: "sunpy.org",
-                            label: "GitHub"
                         }
                     ]
                 },
@@ -105,7 +100,7 @@ export default {
 
 <style lang="scss">
 .projects-list {
-    @media only screen and (min-width: 768px) {
+    @media only screen and (min-width: 801px) {
         display: grid;
         grid-template-columns: 1fr 1fr;
         grid-column-gap: 3em;

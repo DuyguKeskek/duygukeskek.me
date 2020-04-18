@@ -19,12 +19,12 @@
             </div>
             <v-footer id="footer">
 				<div class="motto">
-					Made width<i class="far fa-heart mx-2"></i>and<i class="fab fa-vuejs ml-2"></i>
+					Made with<i class="far fa-heart mx-2"></i>and<i class="fab fa-vuejs ml-2"></i>
 				</div>
 				<v-spacer></v-spacer>
 				<div class="icon-block">
-					<v-btn v-for="icon in icons" :key="icon" class="icon-right mr-1" icon>
-						<v-icon size="20px">{{ icon }}</v-icon>
+					<v-btn v-for="icon in icons" :key="icon.name" :href="icon.link" class="icon-right mr-1" target="_blank" icon>
+						<v-icon size="20px">{{ icon.name }}</v-icon>
 					</v-btn>
 				</div>
             </v-footer>
@@ -37,11 +37,26 @@ export default {
     data () {
 		return {
 			icons: [
-				"fab fa-facebook-square",
-				"fab fa-twitter-square",
-				"fab fa-linkedin",
-				"fab fa-github-square",
-				"fab fa-medium"
+                {
+                    name: "fab fa-facebook-square",
+                    link: "https://www.facebook.com/duygu.keskek.9"
+                },
+                {
+                    name: "fab fa-twitter-square",
+                    link: "https://twitter.com/_NimrodeL_"
+                },
+                {
+                    name: "fab fa-linkedin",
+                    link: "https://www.linkedin.com/in/duygukeskek/"
+                },
+                {
+                    name: "fab fa-github-square",
+                    link: "https://www.facebook.com/duygu.keskek.9"
+                },
+                {
+                    name: "fab fa-medium",
+                    link: "https://medium.com/@duygukeskek"
+                }
 			]
 		}
     }
